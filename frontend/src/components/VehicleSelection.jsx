@@ -11,7 +11,7 @@ const VehicleSelection = ({ onVehicleSelect, selectedCities, handleGameStart }) 
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/vehicles')
+    axios.get('https://abhihunt-fugitive-pursuit-game.onrender.com/api/vehicles')
       .then(response => setVehicles(response.data))
       .catch(error => console.error('Error fetching vehicles:', error));
   }, []);

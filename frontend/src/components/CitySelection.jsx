@@ -11,7 +11,7 @@ const CitySelection = ({ onCitySelect }) => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/cities')
+    axios.get('https://abhihunt-fugitive-pursuit-game.onrender.com/api/cities')
       .then(response => setCities(response.data))
       .catch(error => console.error('Error fetching cities:', error));
   }, []);
